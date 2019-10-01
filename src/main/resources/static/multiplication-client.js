@@ -11,6 +11,8 @@ function updateMultiplication() {
     });
 }
 
+
+
 $(document).ready(function () {
     updateMultiplication();
     $("#attempt-form").submit(function (event) {
@@ -35,11 +37,12 @@ $(document).ready(function () {
             data: JSON.stringify(data),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function (result) {
-                if (result.correct) {
+            async: false,
+            success: function(result){
+                if(result.correct) {
                     $('.result-message').empty().append("The result is correct! Congratulations!");
                 } else {
-                    $('.result-message').empty().append("Oops  that's not correct! But keep trying!");
+                    $('.result-message').empty().append("Oops that's not correct! But keep trying!");
                 }
             }
         });

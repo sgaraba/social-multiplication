@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.BDDMockito.given;
 
@@ -42,7 +44,7 @@ public class MultiplicationServiceImplTest {
         // given
         Multiplication multiplication = new Multiplication(50, 60);
         User user = new User("john_doe");
-        MultiplicationResultAttempt attempt = new MultiplicationResultAttempt(user, multiplication, 3000);
+        MultiplicationResultAttempt attempt = new MultiplicationResultAttempt(user, multiplication, 3000, false);
         // when
         boolean attemptResult = multiplicationServiceImpl.checkAttempt(attempt);
         // assert
@@ -51,13 +53,16 @@ public class MultiplicationServiceImplTest {
 
     @Test
     public void checkWrongAttemptTest() {
-        //given
+        // given
         Multiplication multiplication = new Multiplication(50, 60);
         User user = new User("john_doe");
-        MultiplicationResultAttempt attempt = new MultiplicationResultAttempt(user, multiplication, 3010);
-        //when
+        MultiplicationResultAttempt attempt = new
+                MultiplicationResultAttempt(
+                user, multiplication, 3010, false);
+        given(userRepository.findByAlias("john_doe")).willReturn(Optional.empty());
+        // when
         boolean attemptResult = multiplicationServiceImpl.checkAttempt(attempt);
-        //assert
+        // then
         assertThat(attemptResult).isFalse();
     }
 }
