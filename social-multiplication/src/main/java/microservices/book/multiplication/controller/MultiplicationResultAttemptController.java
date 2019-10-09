@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import microservices.book.multiplication.domain.MultiplicationResultAttempt;
+import microservices.book.multiplication.repository.MultiplicationRepository;
 import microservices.book.multiplication.service.MultiplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,18 +17,19 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/results")
+@RequiredArgsConstructor
 final class MultiplicationResultAttemptController {
 
     private final MultiplicationService multiplicationService;
 
-    @Autowired
-    MultiplicationResultAttemptController(final MultiplicationService multiplicationService) {
-        this.multiplicationService = multiplicationService;
-    }
-
     @GetMapping
     ResponseEntity<List<MultiplicationResultAttempt>> getStatistics(@RequestParam("alias") String alias) {
         return ResponseEntity.ok(multiplicationService.getStatsForUser(alias));
+    }
+
+    @GetMapping("/{resultId}")
+    ResponseEntity getResultById(@PathVariable("resultId") Long resultId){
+        return ResponseEntity.ok(multiplicationService.getResultById(resultId));
     }
 
     @PostMapping
