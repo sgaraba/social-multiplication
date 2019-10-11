@@ -2,7 +2,10 @@ package microservices.book.gamification.service;
 
 import microservices.book.gamification.client.MultiplicationResultAttemptClient;
 import microservices.book.gamification.client.dto.MultiplicationResultAttempt;
-import microservices.book.gamification.domain.*;
+import microservices.book.gamification.domain.Badge;
+import microservices.book.gamification.domain.BadgeCard;
+import microservices.book.gamification.domain.GameStats;
+import microservices.book.gamification.domain.ScoreCard;
 import microservices.book.gamification.repository.BadgeCardRepository;
 import microservices.book.gamification.repository.ScoreCardRepository;
 import org.junit.Before;
@@ -54,6 +57,7 @@ public class GameServiceImplTest {
         int totalScore = 10;
         ScoreCard scoreCard = new ScoreCard(userId, attemptId);
         given(scoreCardRepository.getTotalScoreForUser(userId)).willReturn(totalScore);
+
         // this repository will return the just-won score card
         given(scoreCardRepository.findByUserIdOrderByScoreTimestampDesc(userId)).willReturn(Collections.singletonList(scoreCard));
         given(badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId)).willReturn(Collections.emptyList());
@@ -74,8 +78,10 @@ public class GameServiceImplTest {
         int totalScore = 100;
         BadgeCard firstWonBadge = new BadgeCard(userId, Badge.FIRST_WON);
         given(scoreCardRepository.getTotalScoreForUser(userId)).willReturn(totalScore);
+
         // this repository will return the just-won score card
         given(scoreCardRepository.findByUserIdOrderByScoreTimestampDesc(userId)).willReturn(createNScoreCards(10, userId));
+
         // the first won badge is already there
         given(badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId)).willReturn(Collections.singletonList(firstWonBadge));
 
@@ -154,7 +160,7 @@ public class GameServiceImplTest {
 
     private List<ScoreCard> createNScoreCards(int n, Long userId) {
         return IntStream.range(0, n)
-                .mapToObj(i -> new ScoreCard(userId, (long)i))
+                .mapToObj(i -> new ScoreCard(userId, (long) i))
                 .collect(Collectors.toList());
     }
 }
