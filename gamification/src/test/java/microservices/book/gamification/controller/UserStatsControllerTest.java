@@ -57,7 +57,6 @@ public class UserStatsControllerTest {
 
         // then
         assertThat(response.getStatus()).isEqualTo(HttpStatus.OK.value());
-        assertThat(response.getContentAsString())
-                .isEqualTo(json.write(gameStats).getJson());
+        assertThat(response.getContentAsString()).isEqualTo(json.write(gameStats).getJson());
     }
 }

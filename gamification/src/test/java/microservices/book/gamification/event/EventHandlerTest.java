@@ -33,14 +33,13 @@ public class EventHandlerTest {
         Long attemptId = 8L;
         boolean correct = true;
         GameStats gameStatsExpected = new GameStats();
-        MultiplicationSolvedEvent event = new MultiplicationSolvedEvent(attemptId, userId, correct);
         given(gameService.newAttemptForUser(userId, attemptId, correct)).willReturn(gameStatsExpected);
 
         // when
+        MultiplicationSolvedEvent event = new MultiplicationSolvedEvent(attemptId, userId, correct);
         eventHandler.handleMultiplicationSolved(event);
 
         // then
         verify(gameService).newAttemptForUser(userId, attemptId, correct);
     }
-
 }
