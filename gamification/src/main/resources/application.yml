@@ -10,7 +10,7 @@ spring:
   datasource:
     url: jdbc:h2:file:~/h2/gamification;DB_CLOSE_ON_EXIT=FALSE
 # REST client settings
-multiplicationHost: http://localhost:8080
+multiplicationHost: http://localhost:8000/api
 
 server:
   port: 8081
