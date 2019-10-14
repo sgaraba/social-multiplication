@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 spring:
   h2:
     console:
@@ -8,8 +11,21 @@ spring:
     properties:
       hibernate.show_sql: true
   datasource:
-    url: jdbc:h2:file:~/h2/social-multiplication;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:~/h2/social-multiplication;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
 multiplication:
   exchange: multiplication_exchange
   solved:
     key: multiplication.solved
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        exclude=loggers:
+        include=*:
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
