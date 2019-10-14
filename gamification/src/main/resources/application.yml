@@ -8,7 +8,7 @@ spring:
     properties:
       hibernate.show_sql: true
   datasource:
-    url: jdbc:h2:file:~/h2/gamification;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:~/h2/gamification;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
 # REST client settings
 multiplicationHost: http://localhost:8000/api
 
@@ -23,3 +23,16 @@ multiplication:
     gamification_multiplication_queue
   anything:
     routing-key: multiplication.*
+
+management:
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        exclude=loggers:
+        include=*:
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
