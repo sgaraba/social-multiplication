@@ -2,8 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="467d65e1-4d9b-4173-a1ab-044f46730244" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/MultiplicationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/AttemptResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/LeaderBoardPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/ScoreResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/microservices/book/testutils/http/ApplicationHttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/leaderboard.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/multiplication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/test/java/microservices/book/gamification/controller/AdminControllerDisabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/test/java/microservices/book/gamification/controller/AdminControllerEnabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/microservices/book/gateway/configuration/FallbackHttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway/src/main/java/microservices/book/gateway/configuration/HystrixFallbackProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/AdminControllerDisabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/AdminControllerEnabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/microservices/book/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/microservices/book/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/microservices/book/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/repository/ScoreCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/repository/ScoreCardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationResultAttemptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationResultAttemptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationResultAttemptControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationResultAttemptControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/MultiplicationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/MultiplicationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/RandomGeneratorServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/RandomGeneratorServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,15 +71,33 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="74">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>the_user_john_snow_sends_right_attempts</find>
+      <find>the_user_sends_attempts</find>
+      <find>lastAttemptResponse</find>
+      <find>the user does not get any badge</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -35,9 +105,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/microservices/book/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/LeaderBoardPosition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/Stats.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/User.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/MultiplicationApplication.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/http/ApplicationHttpUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/ScoreResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/AttemptResponse.java" />
+        <option value="$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/multiplication.feature" />
       </list>
     </option>
   </component>
@@ -51,20 +133,27 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-      </list>
-    </option>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="e2e-tests" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="e2e-tests" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="200" />
+    <option name="y" value="107" />
+    <option name="width" value="1200" />
+    <option name="height" value="646" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -72,6 +161,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,27 +179,6 @@
               <item name="e2e-tests" type="b2602c69:ProjectViewProjectNode" />
               <item name="e2e-tests" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="e2e-tests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="e2e-tests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -125,21 +195,37 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="book" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="e2e-tests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="e2e-tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.14901961" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Documents\Books\Java\Microservices\Learn Microservices with Spring Boot\labs\microservices\e2e-tests\src\test\java\microservices\book" />
+      <recent name="C:\Users\user\Documents\Books\Java\Microservices\Learn Microservices with Spring Boot\labs\microservices\e2e-tests\src\test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -153,7 +239,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MultiplicationFeatureTest">
+    <configuration name="Feature: leaderboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/leaderboard.feature" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="e2e-tests" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: leaderboard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="e2e-tests" />
       <extension name="coverage">
@@ -169,8 +272,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LeaderboardFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e2e-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="microservices.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="microservices.book" />
+      <option name="MAIN_CLASS_NAME" value="microservices.book.LeaderboardFeatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiplicationFeatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="e2e-tests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="microservices.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="microservices.book" />
+      <option name="MAIN_CLASS_NAME" value="microservices.book.MultiplicationFeatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/e2e-tests/target/cucumber/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MultiplicationFeatureTest" />
+        <item itemvalue="JUnit.LeaderboardFeatureTest" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Cucumber java.Feature: leaderboard" />
         <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
@@ -186,52 +326,84 @@
       <option name="presentableId" value="Default" />
       <updated>1571079936065</updated>
       <workItem from="1571079939329" duration="319000" />
+      <workItem from="1571120466252" duration="1396000" />
+      <workItem from="1571130870229" duration="3630000" />
+      <workItem from="1571147510770" duration="2251000" />
+      <workItem from="1571164837779" duration="7713000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2019.10.14 at 22h 10m 33s.xml">
-      <configuration name="AppTest" configurationId="JUnit" />
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 32m 05s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 32m 46s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 33m 53s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 46m 12s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 46m 47s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 47m 53s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 49m 34s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 50m 36s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 52m 04s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiplicationFeatureTest - 2019.10.15 at 23h 52m 43s.xml">
+      <configuration name="MultiplicationFeatureTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319000" />
+    <option name="totallyTimeSpent" value="15309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="1592" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12859304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.61238223" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.801964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Cargo" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.2065053" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Cargo" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,37 +417,214 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/App.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/LeaderBoardPosition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3060">
+          <caret line="241" column="43" selection-start-line="241" selection-start-column="43" selection-end-line="241" selection-end-column="43" />
           <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#8313#8314#0" expanded="true" />
+            <element signature="e#8378#8379#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/leaderboard.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/junit-report.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="87" column="11" lean-forward="true" selection-start-line="87" selection-start-column="11" selection-end-line="87" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/LeaderboardFeatureSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" column="63" lean-forward="true" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/ScoreResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/beans/AttemptResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/http/ApplicationHttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+          <folding>
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/testutils/MultiplicationApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/multiplication.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/microservices/book/MultiplicationFeatureSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>jdk-11.0.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
