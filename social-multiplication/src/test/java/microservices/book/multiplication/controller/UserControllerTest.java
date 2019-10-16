@@ -2,7 +2,8 @@ package microservices.book.multiplication.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import microservices.book.multiplication.domain.Multiplication;
-import microservices.book.multiplication.service.MultiplicationService;
+import microservices.book.multiplication.domain.User;
+import microservices.book.multiplication.repository.UserRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,17 +22,17 @@ import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(MultiplicationController.class)
-public class MultiplicationControllerTest {
+@WebMvcTest(UserController.class)
+public class UserControllerTest {
 
     @MockBean
-    private MultiplicationService multiplicationService;
+    private UserRepository userRepository;
 
     @Autowired
     private MockMvc mvc;
 
     // This object will be magically initialized by the initFields method below.
-    private JacksonTester<Multiplication> json;
+    private JacksonTester<User> json;
 
     @Before
     public void setup() {
@@ -39,21 +40,23 @@ public class MultiplicationControllerTest {
     }
 
     @Test
-    public void getRandomMultiplicationTest() throws Exception{
+    public void getUserByIdTest() throws Exception {
         // given
-        given(multiplicationService.createRandomMultiplication())
-                .willReturn(new Multiplication(70, 20));
+        long userId = 1;
+        String userAlias = "john";
+        given(userRepository.findById(userId).get())
+                .willReturn(new User(userId, userAlias));
 
         // when
         MockHttpServletResponse response = mvc.perform(
-                get("/multiplications/random")
+                get("/users/" + userId)
                         .accept(MediaType.APPLICATION_JSON))
                 .andReturn().getResponse();
 
         // then
         assertThat(response.getStatus()).isEqualTo(HttpStatus.OK.value());
         assertThat(response.getContentAsString())
-                .isEqualTo(json.write(new Multiplication(70, 20)).getJson());
+                .isEqualTo(json.write(new User(userId, userAlias)).getJson());
     }
 
 }

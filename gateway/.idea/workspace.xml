@@ -2,31 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff6b6090-7f5a-459f-8f4a-85a907a52bec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../gamification/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/RibbonConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-registry/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service-registry/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/LeaderboardFeatureSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/LeaderboardFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/MultiplicationFeatureSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/MultiplicationFeatureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/MultiplicationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/beans/AttemptResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/beans/LeaderBoardPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/beans/ScoreResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/beans/Stats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/beans/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/testutils/http/ApplicationHttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/resources/leaderboard.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e2e-tests/src/test/resources/multiplication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/controller/ScoreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/test/java/microservices/book/gamification/controller/AdminControllerDisabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gamification/src/test/java/microservices/book/gamification/controller/AdminControllerEnabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/FallbackHttpResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/AdminServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/AdminControllerDisabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/AdminControllerEnabledTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e-tests/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e-tests/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../e2e-tests/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/src/main/java/microservices/book/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/src/test/java/microservices/book/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/target/classes/microservices/book/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../e2e-tests/target/test-classes/microservices/book/AppTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/GamificationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/GamificationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/client/MultiplicationResultAttemptClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/client/MultiplicationResultAttemptClientImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/configuration/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/configuration/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/repository/ScoreCardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/repository/ScoreCardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/java/microservices/book/gamification/service/GameServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamification/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gamification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../social-multiplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/SocialMultiplicationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/SocialMultiplicationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationResultAttemptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/controller/MultiplicationResultAttemptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/java/microservices/book/multiplication/service/MultiplicationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationResultAttemptControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/controller/MultiplicationResultAttemptControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/MultiplicationServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/MultiplicationServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/RandomGeneratorServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../social-multiplication/src/test/java/microservices/book/multiplication/service/RandomGeneratorServiceImplTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,15 +71,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#650#651#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="639">
+              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -76,12 +100,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/RibbonConfiguration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/FallbackHttpResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -114,7 +140,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1456" />
+    <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,16 +199,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,17 +261,21 @@
       <updated>1570874442176</updated>
       <workItem from="1570874444769" duration="3710000" />
       <workItem from="1570960568558" duration="7598000" />
-      <workItem from="1571048612856" duration="8613000" />
+      <workItem from="1571048612856" duration="8791000" />
+      <workItem from="1571133329895" duration="2538000" />
+      <workItem from="1571142171897" duration="38000" />
+      <workItem from="1571166973979" duration="3714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19921000" />
+    <option name="totallyTimeSpent" value="26389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23071979" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2403599" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -260,7 +286,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.8115747" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.756393" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -338,13 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
@@ -359,15 +378,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="100">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#375#376#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/HystrixFallbackConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/microservices/book/gateway/configuration/FallbackHttpResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
         </state>
       </provider>
     </entry>

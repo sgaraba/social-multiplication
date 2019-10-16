@@ -33,7 +33,7 @@ class MultiplicationServiceImpl implements MultiplicationService {
 
     @Transactional
     @Override
-    public boolean checkAttempt(final MultiplicationResultAttempt attempt) {
+    public MultiplicationResultAttempt checkAttempt(final MultiplicationResultAttempt attempt) {
         // Check if the user already exists for that alias
         Optional<User> user = userRepository.findByAlias(attempt.getUser().getAlias());
 
@@ -42,7 +42,8 @@ class MultiplicationServiceImpl implements MultiplicationService {
 
         // Check if the attempt is correct
         boolean isCorrect = attempt.getResultAttempt() ==
-                attempt.getMultiplication().getFactorA() * attempt.getMultiplication().getFactorB();
+                attempt.getMultiplication().getFactorA() *
+                        attempt.getMultiplication().getFactorB();
 
         MultiplicationResultAttempt checkedAttempt = new MultiplicationResultAttempt(
                 user.orElse(attempt.getUser()),
@@ -51,28 +52,27 @@ class MultiplicationServiceImpl implements MultiplicationService {
                 isCorrect
         );
 
-        attemptRepository.save(checkedAttempt);
+        // Stores the attempt
+        MultiplicationResultAttempt storedAttempt = attemptRepository.save(checkedAttempt);
 
         // Communicates the result via Event
-        eventDispatcher.send(new MultiplicationSolvedEvent(
-                checkedAttempt.getId(), checkedAttempt.getUser().getId(), checkedAttempt.isCorrect())
+        eventDispatcher.send(
+                new MultiplicationSolvedEvent(checkedAttempt.getId(),
+                        checkedAttempt.getUser().getId(),
+                        checkedAttempt.isCorrect())
         );
 
-        // Returns the result
-        return isCorrect;
+        return storedAttempt;
     }
 
     @Override
-    public List<MultiplicationResultAttempt> getStatsForUser(String userAlias) {
+    public List<MultiplicationResultAttempt> getStatsForUser(final String userAlias) {
         return attemptRepository.findTop5ByUserAliasOrderByIdDesc(userAlias);
     }
 
     @Override
     public MultiplicationResultAttempt getResultById(final Long resultId) {
-        final Optional<MultiplicationResultAttempt> byId = attemptRepository.findById(resultId);
-        if (byId.isPresent()) {
-            return byId.get();
-        }
-        return null;
+        return attemptRepository.findById(resultId)
+                .orElseThrow(()->new RuntimeException("Result with " +  resultId + " not found."));
     }
 }
